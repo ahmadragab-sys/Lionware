@@ -1,0 +1,85 @@
+.header {
+  display: flex;
+  justify-content: space-between; /* pushes left and right apart */
+  align-items: center;            /* vertically centers content */
+  padding: 10px 20px;
+}
+
+.LogoSection {
+  display: flex;
+  align-items: center; /* keeps logo and text aligned */
+  gap: 12px;           /* space between logo and text */
+}
+.Text{
+  color: rgb(82, 62, 122);
+  font-weight: bold;
+  font-size: 35px;
+  font-family: 'Fjalla One', sans-serif;
+
+}
+.Logo {
+  width: 100px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.IconSection {
+  display: flex;
+  gap:12px; /* spacing between icons */
+  margin-left: auto; 
+}
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;   /* stack items vertically */
+    align-items: flex-start;  /* align to the left */
+    gap: 10px;                /* add spacing between stacked items */
+  }
+
+  .LogoSection {
+    justify-content: center;  /* center logo/text on mobile */
+    width: 100%;              /* take full width */
+  }
+
+  .IconSection {
+    justify-content: center;  /* move icons into the empty space */
+    width: 100%;              /* stretch across screen */
+    margin-left: 0;           /* reset auto margin */
+  }
+
+  .Text {
+    font-size: 22px;          /* smaller text for mobile */
+  }
+}
+
+@media (max-width: 600px) {
+  .Text {
+    font-size: 22px;
+  }
+  .Logo {
+    width: 70px;
+  }
+  .F, .I, .W {
+    font-size: 18px;
+  }
+}
+
+.F,.I,.W {
+  display: flex;
+  color: rgb(82, 62, 122);
+  font-size: 24px; /* adjust size if needed */
+  cursor: pointer;
+}
+.typing {
+  overflow: hidden;              /* hide text until revealed */
+  white-space: nowrap;           /* keep text on one line */
+  animation: typing 3s steps(30, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+}

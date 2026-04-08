@@ -1,0 +1,83 @@
+.Footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* three equal sections */
+  align-items: center;
+  width: 100%;
+}
+
+.ProfileSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start; /* stick left */
+}
+
+.RatingSection {
+  display: flex;
+  justify-content: center; /* center in middle column */
+}
+
+.ContactSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* stick right */
+  text-align: right;
+}
+
+.profile {
+  width: 20%;
+  height: auto;
+}
+
+.myname {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color:  black;
+}
+
+.texts p {
+  font-family: 'Fjalla One', sans-serif;
+  font-size:20px;
+  font-weight: bold;
+  color: black;
+}
+.ContactSection {
+   align-items: flex-start;
+   font-family: 'Fjalla One', sans-serif;
+   font-size: 17px;
+   font-weight: bold;
+   color: black;
+}
+.ContactSection a{
+font-weight: bold;
+color: black;
+}
+
+@media (max-width: 600px) {
+  .Footer{
+    display: flex;
+    flex-direction: column;   /* stack items vertically */
+    justify-content: center;  /* center vertically */
+    align-items: center;      /* center horizontally */
+    height: 100vh; 
+  }
+  .ProfileSection{
+    flex-direction: column;   /* stack logos vertically */
+    justify-content: center;  /* center them */
+    align-items: center;
+    width: 100%;
+  }
+  .RatingSection{
+    flex-direction: column;   /* stack logos vertically */
+    justify-content: center;  /* center them */
+    align-items: center;
+    width: 100%; 
+  }
+  .ContactSection{
+    display: flex;   /* stack logos vertically */
+    justify-content: center;  /* center them */
+  
+  
+  }
+}

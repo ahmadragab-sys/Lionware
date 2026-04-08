@@ -1,0 +1,112 @@
+.Hero{
+    
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 60vh;
+}
+.Me{
+
+   font-family: 'Fjalla One', sans-serif;
+   font-weight: bold;
+   font-size: 40px;
+   color:rgb(234,180,76);
+}
+.Front{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color:rgb(196,143,233);
+}
+.Soft{
+    font-family: 'Fjalla One', sans-serif;
+    font-size:30px ;
+    font-weight: bold;
+    color:rgb(108,62,122) ;
+}
+.js
+{
+   width: 8%;
+   height: auto;
+}
+.html{
+   width: 8%;
+   height: auto;
+}
+.text{
+    flex: 1
+}
+.css{
+   width: 8%;
+   height: auto;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-end;/* stack logos vertically */
+  align-items: flex-end;  /* push them to the right edge */
+  gap: 10px;  
+            /* spacing between logos */
+}
+
+.Djungo{
+   width: 8%;
+   height: auto;
+}
+.Nextjs{
+   width: 8%;
+   height: auto;
+}
+.React{
+   width: 8%;
+   height: auto;
+}
+.LogoTwo{
+  display: flex;
+  justify-content: flex-start;/* stack logos vertically */
+  align-items: flex-end;  /* push them to the right edge */
+  gap: 10px; 
+}
+
+@media (max-width: 600px) {
+  .Hero {
+    display: flex;
+    flex-direction: column;   /* stack items vertically */
+    justify-content: center;  /* center vertically */
+    align-items: center;      /* center horizontally */
+    height: 100vh;    
+       /* full screen height */            /* spacing between icons */
+  }
+
+  .logo {
+    flex-direction: column;   /* stack logos vertically */
+    justify-content: center;  /* center them */
+    align-items: center;
+    width: 100%;              /* full width */
+                  /* more spacing between icons */
+  }
+.LogoTwo{
+    flex-direction: column;   /* stack logos vertically */
+    justify-content: center;  /* center them */
+    align-items: center;
+    width: 100%; 
+}
+  .js, .html, .css, .Djungo,.Nextjs ,.React {
+    width:70px;               /* make icons fill most of screen width */
+    height: auto;
+  }
+}
+.typingg {
+  overflow: hidden;              /* hide text until revealed */
+  white-space: nowrap;           /* keep text on one line */
+  animation: typing 3s steps(30, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typingg {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+}

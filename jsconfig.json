@@ -1,0 +1,13 @@
+{ 
+    "compilerOptions": {
+"ignoreDeprecations": "6.0",
+"checkJs": true,
+"jsx": "react-jsx",
+"baseUrl": "src",
+"resolveJsonModule": true,
+"lib": ["ES6","DOM","ES2017"],
+},
+"include": ["src"],
+"exclude": ["node_modules","build"]
+
+}

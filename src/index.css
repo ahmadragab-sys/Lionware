@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body { background-image: url('/computer-screen-mouse-keyboard.jpg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     }
+html {
+ 
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.1px;
+
+}
+html{box-sizing: border-box;}
+*,*::before,*:after{box-sizing: inherit;}
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+
+    --primary:#000;
+    --title:rgb(244 244 245);
+    --subtitle:rgb(161 161 170);
+    --blue:rgb(210,157,87);
+}
+
+.light{
+    --primary:#fff;
+}
+.Hero{
+    border: 2px solid var(--border);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contaner{
+ 
+    border: 2px solid var(--border);
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--secondary);
+}
+.divider{
+    
+    border-bottom: 1px solid var(--border);
+    margin: 3rem 0;
+ 
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color : initial;
+    transition: 0.2s;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.border{
+    border:2px solid red ;
+}
+@media (max-width: 600px) {
+  body {
+   
+    background-color: white;   /* fallback color for gaps */
+  }
+}
